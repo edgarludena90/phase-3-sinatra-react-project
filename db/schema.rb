@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2022_12_29_145704) do
     t.string "genre"
     t.string "director"
     t.integer "year"
+    t.string "comment"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

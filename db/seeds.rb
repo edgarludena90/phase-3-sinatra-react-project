@@ -4,12 +4,12 @@ Rating.destroy_all
 
 puts "🌱 Seeding movies..."
 
-m1 = Movie.create(title:"John Wick 1",genre:"action",director:"Chad Stahelski",year:2014)
-m2 = Movie.create(title:"JohnW Wick chapter 2",genre:"action",director:"Chad Stahelski",year:2017)
-m3 = Movie.create(title:"Dead Pool",genre:"action",director:"Tim Miller",year:2018)
-m4 = Movie.create(title:"Meet The Fockers",genre:"comedy",director:"Jay Roach",year:2004)
-m5 = Movie.create(title:"21 jump street",genre:"comedy",director:"Chris Miller",year:2012)
-m6 = Movie.create(title:"The NoteBool",genre:"romantic",director:"Nick Cassavetes",year:2004)
+m1 = Movie.create(title:"John Wick 1",genre:"action",director:"Chad Stahelski",year:2014,comment:"WHY DID YOU HAVE TO KILL THE DOG ")
+m2 = Movie.create(title:"JohnW Wick chapter 2",genre:"action",director:"Chad Stahelski",year:2017,comment:"ALL THIS OVER A DOG ")
+m3 = Movie.create(title:"Dead Pool",genre:"action",director:"Tim Miller",year:2018,comment:"WE WANT MORE BLOOD AND GUTS")
+m4 = Movie.create(title:"Meet The Fockers",genre:"comedy",director:"Jay Roach",year:2004,comment:"Family friendly must watch this movie")
+m5 = Movie.create(title:"21 jump street",genre:"comedy",director:"Chris Miller",year:2012,comment:"MY NAME IS JEFF....")
+m6 = Movie.create(title:"The NoteBool",genre:"romantic",director:"Nick Cassavetes",year:2004,comment:"real men cry ")
 
 puts "🌱 Seeding rating.... "
 
