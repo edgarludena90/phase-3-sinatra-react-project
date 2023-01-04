@@ -1,3 +1,7 @@
+puts "Deleting Movie/Rating data..."
+Movie.destroy_all
+Rating.destroy_all
+
 puts "🌱 Seeding movies..."
 
 m1 = Movie.create(title:"John Wick 1",genre:"action",director:"Chad Stahelski",year:2014)

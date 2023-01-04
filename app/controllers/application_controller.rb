@@ -20,11 +20,19 @@ class ApplicationController < Sinatra::Base
   post '/movie' do
     movies =Movie.create(title:params[:title],genre:params[:genre],director:params[:director],year:params[:year])
     movies.to_json
-
-  delete '/movie/:id' do
-    movie = Movie.find(params[:id])
-    movie.destroy
-    movie.to_json
   end
+
+ get '/theater' do
+  theaters = Theater.all
+  theaters.to_json
 end
+
+delete '/rating/id' do 
+  ratings = Ratings.find(params[id])
+  ratings.destroy
+  ratings.to_json
+end
+
+end
+
 
