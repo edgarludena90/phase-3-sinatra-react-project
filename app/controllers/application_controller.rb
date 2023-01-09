@@ -33,15 +33,20 @@ class ApplicationController < Sinatra::Base
     movies.to_json
   end
 
-  get '/rating' do
-   ratings = Rating.all
-   ratings.to_json
-  end
+#   get '/rating' do
+#    ratings = Rating.all
+#    ratings.to_json
+#   end
 
- delete '/rating/:id' do 
-    ratings = Rating.find(params[:id])
-    ratings.destroy
-    ratings.to_json
+#  delete '/rating/:id' do 
+#     ratings = Rating.find(params[:id])
+#     ratings.destroy
+#     ratings.to_json
+#   end
+  delete '/movie/:id' do 
+    movies = Movie.find(params[:id])
+    movies.destroy
+    movies.to_json
   end
 
 end
